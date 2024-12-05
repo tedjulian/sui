@@ -209,7 +209,7 @@ jobs:
             ./tmp/sui-${{ env.sui_tag }}-${{ env.os_type }}.tgz
 
       - name: Attach artifacts to ${{ env.sui_tag }} release in GH
-        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # pin@v1
+        uses: softprops/action-gh-release@e7a8f85e1c67a31e6ed99a94b41bd0b71bbee6b8 # pin@v2.0.9
         with:
           tag_name: ${{ env.sui_tag }}
           files: |
